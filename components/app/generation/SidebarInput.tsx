@@ -11,7 +11,7 @@ interface SidebarInputProps {
 export default function SidebarInput({ onSubmit, disabled = false }: SidebarInputProps) {
   const [url, setUrl] = useState<string>("");
   const [selectedStyle, setSelectedStyle] = useState<string>("1");
-  const [selectedModel, setSelectedModel] = useState<string>("moonshotai/kimi-k2-instruct-0905");
+  const [selectedModel, setSelectedModel] = useState<string>("llama3-70b-8192");
   const [additionalInstructions, setAdditionalInstructions] = useState<string>("");
   const [isValidUrl, setIsValidUrl] = useState<boolean>(false);
 
@@ -34,7 +34,7 @@ export default function SidebarInput({ onSubmit, disabled = false }: SidebarInpu
   ];
 
   const models = [
-    { id: "moonshotai/kimi-k2-instruct-0905", name: "Kimi K2 0905 on Groq" },
+    { id: "llama3-70b-8192", name: "Llama 3 70b (Groq)" },
     { id: "openai/gpt-5", name: "GPT-5" },
     { id: "anthropic/claude-sonnet-4-20250514", name: "Sonnet 4" },
     { id: "google/gemini-2.0-flash-exp", name: "Gemini 2.0" },

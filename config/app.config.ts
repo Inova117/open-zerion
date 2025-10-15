@@ -51,12 +51,12 @@ export const appConfig = {
   // AI Model Configuration
   ai: {
     // Default AI model
-    defaultModel: 'moonshotai/kimi-k2-instruct-0905',
+    defaultModel: 'llama3-70b-8192',
     
     // Available models
     availableModels: [
       'openai/gpt-5',
-      'moonshotai/kimi-k2-instruct-0905',
+      'llama3-70b-8192',
       'anthropic/claude-sonnet-4-20250514',
       'google/gemini-2.0-flash-exp'
     ],
@@ -64,16 +64,16 @@ export const appConfig = {
     // Model display names
     modelDisplayNames: {
       'openai/gpt-5': 'GPT-5',
-      'moonshotai/kimi-k2-instruct-0905': 'Kimi K2 (Groq)',
+      'llama3-70b-8192': 'Llama 3 70b (Groq)',
       'anthropic/claude-sonnet-4-20250514': 'Sonnet 4',
       'google/gemini-2.0-flash-exp': 'Gemini 2.0 Flash (Experimental)'
     } as Record<string, string>,
     
     // Model API configuration
     modelApiConfig: {
-      'moonshotai/kimi-k2-instruct-0905': {
+      'llama3-70b-8192': {
         provider: 'groq',
-        model: 'moonshotai/kimi-k2-instruct-0905'
+        model: 'llama3-70b-8192'
       }
     },
     
